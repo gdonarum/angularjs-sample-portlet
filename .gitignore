@@ -1,7 +1,19 @@
-*.class
+# Eclipse
+.classpath
+.project
+.settings/
 
-# Package Files #
-*.jar
-*.war
-*.ear
-/target/
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Gradle
+.gradle
