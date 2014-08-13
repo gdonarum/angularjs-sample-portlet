@@ -18,12 +18,16 @@
 
 <portlet:defineObjects />
 
+<div ng-app="user-list-portlet">
+
 <input type="text" ng-model="userName"/>
 <div class="users" ng-controller="UsersListController" ng-cloak>
     <div class="user" ng-repeat="user in users |orderBy:'lastName'|filter:userName">        
         <div class="right-panel">
-            <div class="first-name"><a href="mailto: {{user.emailAddress}}">{{user.firstName}} {{user.lastName}}</a></div>            
+            <div class="first-name"><a href="mailto:{{user.emailAddress}}">{{user.firstName}} {{user.lastName}}</a></div>            
         </div>
         <div class="clear"/>
     </div>
+</div>
+
 </div>
